@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">GiftSuggestion</string>
+    <string name="gift_suggestion">اقترح هداية</string>
+    <string name="gift1"> زهره</string>
+    <string name="gift2"> زهره ملونه</string>
+    <string name="gift3"> كعكه</string>
+    <string name="gift4"> لاب توب </string>
+    <string name="gift5"> موبيل </string>
+    <string name="gift6"> كتاب </string>
+    <string name="gift7"> جاتوه </string>
+    <string name="gift8"> تيشرت </string>
+    <string name="gift9"> حذاء </string>
+    <string name="gift10"> ماس </string>
+</resources>

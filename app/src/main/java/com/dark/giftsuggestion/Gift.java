@@ -4,6 +4,11 @@ public class Gift {
     private int name;
     private int picture;
 
+    public Gift(int name, int picture) {
+        this.name = name;
+        this.picture = picture;
+    }
+
     public int getName() {
         return name;
     }

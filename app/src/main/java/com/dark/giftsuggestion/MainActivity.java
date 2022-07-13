@@ -48,7 +48,18 @@ public class MainActivity extends AppCompatActivity {
     };
      */
     int mCurrentGiftPhotoIndex=0;
-    private Gift[] mGift=new Gift[10];
+    private Gift[] mGift={
+            new Gift(R.string.gift1,R.drawable.gift_1),
+            new Gift(R.string.gift2,R.drawable.gift_2),
+            new Gift(R.string.gift3,R.drawable.gift_3),
+            new Gift(R.string.gift4,R.drawable.gift_4),
+            new Gift(R.string.gift5,R.drawable.gift_5),
+            new Gift(R.string.gift6,R.drawable.gift_6),
+            new Gift(R.string.gift7,R.drawable.gift_7),
+            new Gift(R.string.gift8,R.drawable.gift_8),
+            new Gift(R.string.gift9,R.drawable.gift_9),
+            new Gift(R.string.gift10,R.drawable.gift_10)
+    };
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -56,47 +67,6 @@ public class MainActivity extends AppCompatActivity {
         imageView=findViewById(R.id.image_gift); //image view is the image view in the layout
         mTextName=findViewById(R.id.gift_text_view); //text name is the text view in the layout
         mRandom =new Random();
-        Gift gif1t=new Gift();
-        gif1t.setName(R.string.gift1);
-        gif1t.setPicture(R.drawable.gift_1);
-        mGift[0]=gif1t;
-        Gift gift2=new Gift();
-        gift2.setName(R.string.gift2);
-        gift2.setPicture(R.drawable.gift_2);
-        mGift[1]=gift2;
-        Gift gift3=new Gift();
-        gift3.setName(R.string.gift3);
-        gift3.setPicture(R.drawable.gift_3);
-        mGift[2]=gift3;
-        Gift gift4=new Gift();
-        gift4.setName(R.string.gift4);
-        gift4.setPicture(R.drawable.gift_4);
-        mGift[3]=gift4;
-        Gift gift5=new Gift();
-        gift5.setName(R.string.gift5);
-        gift5.setPicture(R.drawable.gift_5);
-        mGift[4]=gift5;
-        Gift gift6=new Gift();
-        gift6.setName(R.string.gift6);
-        gift6.setPicture(R.drawable.gift_6);
-        mGift[5]=gift6;
-        Gift gift7=new Gift();
-        gift7.setName(R.string.gift7);
-        gift7.setPicture(R.drawable.gift_7);
-        mGift[6]=gift7;
-        Gift gift8=new Gift();
-        gift8.setName(R.string.gift8);
-        gift8.setPicture(R.drawable.gift_8);
-        mGift[7]=gift8;
-        Gift gift9=new Gift();
-        gift9.setName(R.string.gift9);
-        gift9.setPicture(R.drawable.gift_9);
-        mGift[8]=gift9;
-        Gift gift10=new Gift();
-        gift10.setName(R.string.gift10);
-        gift10.setPicture(R.drawable.gift_10);
-        mGift[9]=gift10;
-
     }
     public void display(View view) {
         if (mGiftPhotoIndex < 9) {
